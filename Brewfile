@@ -9,6 +9,8 @@ brew "neovim"
 brew "ripgrep"
 brew "fd"
 
+brew "ruff"
+
 # Casks
 cask "visual-studio-code"
 cask "docker-desktop"
