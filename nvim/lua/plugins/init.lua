@@ -53,7 +53,7 @@ return {
     "mfussenegger/nvim-dap-python",
     ft = "python",
     config = function()
-      require("dap-python").setup "uv"
+      require("dap-python").setup "/Users/tb/Documents/01-Work/Equinor/ert/.venv/bin/python"
       table.insert(require("dap").configurations.python, {
         type = "python",
         request = "launch",
@@ -65,6 +65,22 @@ return {
         env = {
           PYTHONFROZENMODULES = "off",
           QT_LOGGING_RULES = "*.warning=false",
+        },
+      })
+      table.insert(require("dap").configurations.python, {
+        type = "python",
+        request = "launch",
+        name = "ert gui poly_example",
+        program = "/Users/tb/Documents/01-Work/Equinor/ert/.venv/bin/ert",
+        args = { "gui", "test-data/ert/poly_example/poly.ert" },
+        console = "integratedTerminal",
+        subProcess = false,
+        cwd = "${workspaceFolder}",
+        justMyCode = false,
+        env = {
+          PYTHONFROZENMODULES = "off",
+          QT_LOGGING_RULES = "*.warning=false",
+          PATH = "/Users/tb/Documents/01-Work/Equinor/ert/.venv/bin:" .. os.getenv "PATH",
         },
       })
     end,
