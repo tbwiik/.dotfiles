@@ -45,6 +45,10 @@ alias ll='ls -lh'
 alias ls='ls -G'
 alias lsa='ls -lah'
 
+# Misc
+alias c='copilot'
+alias n='nvim'
+
 # Work
 alias gert='cd /Users/tb/Documents/01-Work/Equinor/ert'
 alias xpoly='uv run just poly'
