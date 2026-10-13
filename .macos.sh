@@ -21,6 +21,7 @@ set_default com.apple.dock autohide bool true
 # Trackpad & Mouse
 set_default com.apple.AppleMultitouchTrackpad Clicking bool true
 set_default com.apple.AppleMultitouchTrackpad TrackpadRightClick bool true
+set_default NSGlobalDomain com.apple.swipescrolldirection bool true
 set_default NSGlobalDomain com.apple.mouse.tapBehavior int 1
 
 # Keyboard behavior
@@ -50,4 +51,3 @@ if [ "$changed" -eq 1 ]; then
 else
   echo "No changes needed."
 fi
-
