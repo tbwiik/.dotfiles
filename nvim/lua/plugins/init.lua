@@ -93,6 +93,16 @@ return {
     end,
   },
   {
+    "MeanderingProgrammer/render-markdown.nvim",
+    ft = "markdown",
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {
+      completions = { lsp = { enabled = true } },
+    },
+  },
+  {
     "folke/persistence.nvim",
     event = "BufReadPre",
     opts = { dir = vim.fn.expand(vim.fn.stdpath "state") .. "/sessions/" },
