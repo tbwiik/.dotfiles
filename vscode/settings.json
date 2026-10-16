@@ -11,8 +11,7 @@
     "files.autoSave": "onFocusChange",
     "editor.tabCompletion": "onlySnippets",
     "workbench.editorAssociations": {
-        "*.copilotmd": "vscode.markdown.preview.editor",
-        "*.pdf": "latex-workshop-pdf-hook"
+        "*.copilotmd": "vscode.markdown.preview.editor"
     },
     "cmake.configureOnOpen": false,
     "json.schemaDownload.trustedDomains": {
@@ -24,7 +23,6 @@
         "https://biomejs.dev": true
     },
     "editor.formatOnSave": true,
-    "latex-workshop.formatting.latex": "tex-fmt",
     "ruff.format.preview": false,
     "claudeCode.preferredLocation": "panel",
     "scm.diffDecorationsGutterPattern": {
