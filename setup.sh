@@ -44,11 +44,18 @@ fi
 if ! command -v brew &>/dev/null; then
     info "Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    # Add Homebrew to PATH
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.zprofile"
-    eval "$(/opt/homebrew/bin/brew shellenv)"
 else
     info "Homebrew already installed."
+fi
+
+# Ensure Homebrew is on PATH now and in future login shells
+brew_bin="/opt/homebrew/bin/brew"
+if [ -x "$brew_bin" ]; then
+    eval "$("$brew_bin" shellenv)"
+    if ! grep -qs "brew shellenv" "$HOME/.zprofile"; then
+        info "Adding Homebrew to PATH in ~/.zprofile..."
+        echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "$HOME/.zprofile"
+    fi
 fi
 
 # 3. Install Brewfile packages
