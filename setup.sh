@@ -149,6 +149,7 @@ symlink_path() {
 
 info "Linking dotfiles..."
 symlink_path "$dotfiles_dir/.zshrc" "$HOME/.zshrc"
+symlink_path "$dotfiles_dir/.p10k.zsh" "$HOME/.p10k.zsh"
 symlink_path "$dotfiles_dir/.aliases" "$HOME/.aliases"
 symlink_path "$dotfiles_dir/.gitconfig" "$HOME/.gitconfig"
 symlink_path "$dotfiles_dir/.gitignore_global" "$HOME/.gitignore_global"
