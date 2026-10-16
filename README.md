@@ -28,3 +28,8 @@ Existing files at a symlink target are moved to `<file>.backup`; existing symlin
 ## Manual steps
 
 - If VS Code Settings Sync is on, exclude Settings so it doesn't fight the symlink.
+- Create ssh keys and add to github.
+- Change origin of this repo from https to ssh.
+
+## Known confusions 
+- Homebrew asks you to add it to path - this is part of setup script
