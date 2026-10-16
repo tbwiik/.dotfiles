@@ -1,7 +1,6 @@
 [user]
 	name = Torbjørn Wiik
 	email = 22935970+tbwiik@users.noreply.github.com
-	signingkey = 309D2423C6CAC2CFD5C4DFE7B10867F125F365E4
 [credential]
 	helper = osxkeychain
 [core]
