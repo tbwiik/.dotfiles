@@ -23,11 +23,6 @@ export VISUAL=nvim
 alias vim=nvim
 alias vi=nvim
 
-# Homebrew (Apple Silicon)
-if command -v brew &> /dev/null; then
-  eval "$(brew shellenv)"
-fi
-
 # FZF integration
 command -v fzf &> /dev/null && source <(fzf --zsh)
 
