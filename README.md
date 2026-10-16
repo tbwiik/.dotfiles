@@ -5,7 +5,7 @@ macOS setup: zsh (Oh My Zsh + Powerlevel10k), Neovim (NvChad), git, gh, VS Code,
 ## Install
 
 ```sh
-git clone https://github.com/tbwiik/dotfiles.git ~/.dotfiles
+git clone https://github.com/tbwiik/.dotfiles.git ~/.dotfiles
 ~/.dotfiles/setup.sh
 ```
 
