@@ -147,6 +147,17 @@ symlink_path "$dotfiles_dir/.gitconfig" "$HOME/.gitconfig"
 symlink_path "$dotfiles_dir/.gitignore_global" "$HOME/.gitignore_global"
 symlink_path "$dotfiles_dir/.vimrc" "$HOME/.vimrc"
 symlink_path "$dotfiles_dir/nvim" "$HOME/.config/nvim"
+# iTerm2 dynamic profile with a Nerd Font (needed for nvim icons)
+symlink_path "$dotfiles_dir/iterm2/dotfiles-profile.json" \
+    "$HOME/Library/Application Support/iTerm2/DynamicProfiles/dotfiles-profile.json"
+
+# iTerm2 rewrites its prefs on quit, so only set the default profile while it's closed
+if pgrep -x iTerm2 &>/dev/null; then
+    info "iTerm2 is running. Set the 'Dotfiles' profile as default manually (Settings > Profiles > Other Actions)."
+else
+    defaults write com.googlecode.iterm2 "Default Bookmark Guid" -string "6f1d1b7e-0c1a-4c43-9a55-d07f11e50001"
+    info "Set 'Dotfiles' as the default iTerm2 profile."
+fi
 
 # 7. Sync Neovim (NvChad) plugins headlessly so it's ready without manual launch
 if command -v nvim &>/dev/null; then
