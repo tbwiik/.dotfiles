@@ -1,6 +1,3 @@
-# Taps
-tap "oven-sh/bun"
-
 # Formulas
 brew "python"
 brew "git"
@@ -25,9 +22,6 @@ brew "ruff"
 brew "llvm"
 brew "cmake"
 
-# JavaScript
-brew "oven-sh/bun/bun"
-
 # Casks
 cask "visual-studio-code"
 cask "docker-desktop"
@@ -38,5 +32,4 @@ cask "microsoft-outlook"
 cask "slack"
 cask "iterm2"
 cask "font-jetbrains-mono-nerd-font"
-cask "copilot-cli"
 cask "logi-options+"
