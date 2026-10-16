@@ -1,6 +1,7 @@
 # Formulas
 brew "python"
 brew "git"
+brew "gh"
 brew "zsh"
 brew "gnupg"
 
