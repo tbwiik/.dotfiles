@@ -15,14 +15,21 @@ set_default() {
   fi
 }
 
+# Appearance
+set_default NSGlobalDomain AppleInterfaceStyle string Dark
+
 # Dock
 set_default com.apple.dock autohide bool true
 
 # Trackpad & Mouse
 set_default com.apple.AppleMultitouchTrackpad Clicking bool true
 set_default com.apple.AppleMultitouchTrackpad TrackpadRightClick bool true
-set_default NSGlobalDomain com.apple.swipescrolldirection bool true
+set_default NSGlobalDomain com.apple.swipescrolldirection bool false
 set_default NSGlobalDomain com.apple.mouse.tapBehavior int 1
+# Mouse speeds: one step below max
+set_default NSGlobalDomain com.apple.mouse.scaling float 2.5
+set_default NSGlobalDomain com.apple.scrollwheel.scaling float 2
+set_default NSGlobalDomain com.apple.mouse.doubleClickThreshold float 0.2
 
 # Keyboard behavior
 set_default NSGlobalDomain ApplePressAndHoldEnabled bool false
