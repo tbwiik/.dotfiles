@@ -29,7 +29,7 @@ if command -v brew &> /dev/null; then
 fi
 
 # FZF integration
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+command -v fzf &> /dev/null && source <(fzf --zsh)
 
 # Ripgrep + FZF
 if command -v rg &> /dev/null; then
