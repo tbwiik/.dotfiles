@@ -46,7 +46,7 @@ alias ls='ls -G'
 alias lsa='ls -lah'
 
 # Misc
-alias c='copilot'
+alias c='gh copilot'
 alias n='nvim'
 
 # Work
