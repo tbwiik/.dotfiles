@@ -154,7 +154,6 @@ symlink_path "$dotfiles_dir/.p10k.zsh" "$HOME/.p10k.zsh"
 symlink_path "$dotfiles_dir/.aliases" "$HOME/.aliases"
 symlink_path "$dotfiles_dir/.gitconfig" "$HOME/.gitconfig"
 symlink_path "$dotfiles_dir/.gitignore_global" "$HOME/.gitignore_global"
-symlink_path "$dotfiles_dir/.vimrc" "$HOME/.vimrc"
 symlink_path "$dotfiles_dir/nvim" "$HOME/.config/nvim"
 symlink_path "$dotfiles_dir/gh/config.yml" "$HOME/.config/gh/config.yml"
 symlink_path "$dotfiles_dir/vscode/settings.json" \
