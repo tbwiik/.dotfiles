@@ -159,6 +159,8 @@ symlink_path "$dotfiles_dir/nvim" "$HOME/.config/nvim"
 symlink_path "$dotfiles_dir/gh/config.yml" "$HOME/.config/gh/config.yml"
 symlink_path "$dotfiles_dir/vscode/settings.json" \
     "$HOME/Library/Application Support/Code/User/settings.json"
+symlink_path "$dotfiles_dir/copilot/copilot-instructions.md" \
+    "$HOME/.copilot/copilot-instructions.md"
 # iTerm2 dynamic profile with a Nerd Font (needed for nvim icons)
 symlink_path "$dotfiles_dir/iterm2/dotfiles-profile.json" \
     "$HOME/Library/Application Support/iTerm2/DynamicProfiles/dotfiles-profile.json"
