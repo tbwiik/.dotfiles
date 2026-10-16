@@ -1,0 +1,33 @@
+{
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "latex": false,
+        "cpp": false
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.tabCompletion": "onlySnippets",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "cmake.configureOnOpen": false,
+    "json.schemaDownload.trustedDomains": {
+        "https://schemastore.azurewebsites.net/": true,
+        "https://raw.githubusercontent.com/": true,
+        "https://www.schemastore.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://json-schema.org/": true,
+        "https://biomejs.dev": true
+    },
+    "editor.formatOnSave": true,
+    "latex-workshop.formatting.latex": "tex-fmt",
+    "ruff.format.preview": false,
+    "claudeCode.preferredLocation": "panel",
+    "scm.diffDecorationsGutterPattern": {
+        "added": true
+    }
+}

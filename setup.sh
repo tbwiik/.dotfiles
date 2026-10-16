@@ -157,6 +157,8 @@ symlink_path "$dotfiles_dir/.gitignore_global" "$HOME/.gitignore_global"
 symlink_path "$dotfiles_dir/.vimrc" "$HOME/.vimrc"
 symlink_path "$dotfiles_dir/nvim" "$HOME/.config/nvim"
 symlink_path "$dotfiles_dir/gh/config.yml" "$HOME/.config/gh/config.yml"
+symlink_path "$dotfiles_dir/vscode/settings.json" \
+    "$HOME/Library/Application Support/Code/User/settings.json"
 # iTerm2 dynamic profile with a Nerd Font (needed for nvim icons)
 symlink_path "$dotfiles_dir/iterm2/dotfiles-profile.json" \
     "$HOME/Library/Application Support/iTerm2/DynamicProfiles/dotfiles-profile.json"
