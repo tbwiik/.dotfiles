@@ -1,16 +1,32 @@
+# Taps
+tap "oven-sh/bun"
+
 # Formulas
 brew "python"
 brew "git"
+brew "git-lfs"
 brew "gh"
 brew "zsh"
-brew "gnupg"
+brew "fzf"
+brew "tree"
 
 # Neovim/Nvchad related formulas
 brew "neovim"
 brew "ripgrep"
 brew "fd"
+brew "node"
+brew "tree-sitter-cli"
 
+# Python
+brew "uv"
 brew "ruff"
+
+# C/C++
+brew "llvm"
+brew "cmake"
+
+# JavaScript
+brew "oven-sh/bun/bun"
 
 # Casks
 cask "visual-studio-code"
@@ -22,3 +38,5 @@ cask "microsoft-outlook"
 cask "slack"
 cask "iterm2"
 cask "font-jetbrains-mono-nerd-font"
+cask "copilot-cli"
+cask "logi-options+"
