@@ -21,6 +21,9 @@ brew "yaml-language-server"
 brew "typescript-language-server"
 brew "vscode-langservers-extracted"
 
+# Language servers used by Copilot CLI (copilot/lsp-config.json)
+brew "typescript"
+
 # Python
 brew "uv"
 brew "ruff"

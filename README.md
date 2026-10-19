@@ -23,6 +23,7 @@ Existing files at a symlink target are moved to `<file>.backup`; existing symlin
 | `gh/config.yml` | `~/.config/gh/config.yml` |
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `copilot/copilot-instructions.md` | `~/.copilot/copilot-instructions.md` |
+| `copilot/lsp-config.json` | `~/.copilot/lsp-config.json` |
 | `iterm2/dotfiles-profile.json` | `~/Library/Application Support/iTerm2/DynamicProfiles/` |
 
 ## Manual steps
