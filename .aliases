@@ -22,7 +22,6 @@ alias c='gh copilot'
 alias n='nvim'
 
 # Work
-alias gert='cd ~/Documents/01-Work/Equinor/ert'
+alias gert='cd ~/Documents/scout/ert'
 alias xpoly='uv run just poly'
-alias rdypr='git rebase main -i --exec "uv run just rapid-tests"'
 
