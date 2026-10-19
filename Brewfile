@@ -14,6 +14,13 @@ brew "fd"
 brew "node"
 brew "tree-sitter-cli"
 
+# Language servers enabled in nvim/lua/configs/lspconfig.lua
+brew "pyright"
+brew "marksman"
+brew "yaml-language-server"
+brew "typescript-language-server"
+brew "vscode-langservers-extracted"
+
 # Python
 brew "uv"
 brew "ruff"
