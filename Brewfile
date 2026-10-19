@@ -15,13 +15,12 @@ brew "node"
 brew "tree-sitter-cli"
 
 # Language servers enabled in nvim/lua/configs/lspconfig.lua
-brew "pyright"
 brew "marksman"
 brew "yaml-language-server"
-brew "typescript-language-server"
 brew "vscode-langservers-extracted"
 
-# Language servers used by Copilot CLI (copilot/lsp-config.json)
+# Also used by Copilot CLI (copilot/lsp-config.json)
+brew "pyright"
 brew "typescript"
 
 # Python
