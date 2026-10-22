@@ -20,6 +20,7 @@ Existing files at a symlink target are moved to `<file>.backup`; existing symlin
 | `.zshrc`, `.zshenv`, `.p10k.zsh`, `.aliases`, `.gitconfig` | `~/` |
 | `git/ignore` | `~/.config/git/ignore` |
 | `nvim/` | `~/.config/nvim` |
+| `tmux/tmux.conf` | `~/.config/tmux/tmux.conf` |
 | `gh/config.yml` | `~/.config/gh/config.yml` |
 | `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
 | `copilot/copilot-instructions.md` | `~/.copilot/copilot-instructions.md` |

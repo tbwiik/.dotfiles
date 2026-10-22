@@ -156,6 +156,8 @@ symlink_path "$dotfiles_dir/.gitconfig" "$HOME/.gitconfig"
 # Git's default global ignore path, so tools that append to it write into the repo
 symlink_path "$dotfiles_dir/git/ignore" "$HOME/.config/git/ignore"
 symlink_path "$dotfiles_dir/nvim" "$HOME/.config/nvim"
+# Link only the file so TPM plugins in ~/.config/tmux/plugins stay out of the repo
+symlink_path "$dotfiles_dir/tmux/tmux.conf" "$HOME/.config/tmux/tmux.conf"
 symlink_path "$dotfiles_dir/gh/config.yml" "$HOME/.config/gh/config.yml"
 symlink_path "$dotfiles_dir/vscode/settings.json" \
     "$HOME/Library/Application Support/Code/User/settings.json"
@@ -182,7 +184,20 @@ else
     info "nvim not found, skipping plugin sync."
 fi
 
-# 8. Apply macOS defaults if provided by the dotfiles
+# 8. Install tmux plugin manager (TPM) and tmux plugins
+tpm_dir="$HOME/.config/tmux/plugins/tpm"
+if [ ! -d "$tpm_dir" ]; then
+    info "Installing tmux plugin manager (TPM)..."
+    git clone --depth=1 https://github.com/tmux-plugins/tpm "$tpm_dir"
+else
+    info "TPM already installed."
+fi
+if command -v tmux &>/dev/null; then
+    info "Installing tmux plugins..."
+    "$tpm_dir/bin/install_plugins" || info "tmux plugin install exited with a non-zero status."
+fi
+
+# 9. Apply macOS defaults if provided by the dotfiles
 macos_script="$dotfiles_dir/.macos.sh"
 
 if [ -f "$macos_script" ]; then

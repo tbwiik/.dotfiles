@@ -6,6 +6,7 @@ brew "gh"
 brew "zsh"
 brew "fzf"
 brew "tree"
+brew "tmux"
 
 # Neovim/Nvchad related formulas
 brew "neovim"
