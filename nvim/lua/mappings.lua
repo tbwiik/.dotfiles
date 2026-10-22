@@ -7,6 +7,12 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode (to normal)" })
 
+-- Override NvChad's window nav so C-hjkl also crosses into tmux panes
+map("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { desc = "Navigate left (nvim/tmux)" })
+map("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { desc = "Navigate down (nvim/tmux)" })
+map("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { desc = "Navigate up (nvim/tmux)" })
+map("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { desc = "Navigate right (nvim/tmux)" })
+
 -- Debug keybindings
 map("n", "<leader><Right>", function()
   require("dap").continue()

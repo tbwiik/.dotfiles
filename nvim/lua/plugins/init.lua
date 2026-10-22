@@ -18,6 +18,11 @@ return {
     lazy = false,
   },
 
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+
   { import = "nvchad.blink.lazyspec" },
   {
     "nvim-neotest/nvim-nio",
