@@ -6,10 +6,18 @@ set_default() {
   local key="$2"
   local type="$3"
   local value="$4"
-  local current
-  
+  local current expected="$value"
+
+  # `defaults read` returns bools as 1/0
+  if [ "$type" = "bool" ]; then
+    case "$value" in
+      true) expected=1 ;;
+      false) expected=0 ;;
+    esac
+  fi
+
   current=$(defaults read "$domain" "$key" 2>/dev/null || echo "unset")
-  if [ "$current" != "$value" ]; then
+  if [ "$current" != "$expected" ]; then
     defaults write "$domain" "$key" "-$type" "$value"
     changed=1
   fi
