@@ -49,6 +49,8 @@ set_default NSGlobalDomain AppleShowAllExtensions bool true
 set_default NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled bool false
 set_default NSGlobalDomain NSAutomaticDashSubstitutionEnabled bool false
 set_default NSGlobalDomain NSAutomaticSpellingCorrectionEnabled bool false
+set_default NSGlobalDomain NSAutomaticCapitalizationEnabled bool false
+set_default NSGlobalDomain NSAutomaticInlinePredictionEnabled bool false
 
 # Security: password timing
 set_default com.apple.screensaver askForPassword int 1
