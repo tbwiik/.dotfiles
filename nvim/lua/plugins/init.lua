@@ -23,6 +23,33 @@ return {
     lazy = false,
   },
 
+  {
+    "nvim-treesitter/nvim-treesitter",
+    init = function()
+      vim.treesitter.language.register("json", "jsonl")
+    end,
+    config = function(_, opts)
+      local ts = require "nvim-treesitter"
+      ts.setup(opts)
+      -- main branch ignores `ensure_installed`; install() skips already-installed parsers
+      ts.install {
+        "bash",
+        "css",
+        "diff",
+        "gitcommit",
+        "html",
+        "javascript",
+        "json",
+        "luadoc",
+        "python",
+        "toml",
+        "tsx",
+        "typescript",
+        "yaml",
+      }
+    end,
+  },
+
   { import = "nvchad.blink.lazyspec" },
   {
     "nvim-neotest/nvim-nio",
